@@ -1,0 +1,327 @@
+<html>
+<head>
+    <title>Awareness on Healthy Eating and Nutrition</title>
+    <style>
+      
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            color: #6667ab;
+        }
+
+        p {
+            padding: 10px 20px;
+            line-height: 1.6;
+        }
+
+     
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #6667ab;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #bf9000; 
+        }
+
+     
+        #main-title {
+            color: green;
+        }
+
+      
+        .highlight {
+            background-color: #e0f7fa;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+     
+        img[src*="tbn:"] {
+            border: 2px solid #6667ab;
+            border-radius: 10px;
+        }
+
+      
+        a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+
+     
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #bf9000;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #bf9000;
+            color: white;
+        }
+
+        /* this is for Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* this Styles for the Login Form */
+        .login-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            background-color: #fff;
+            border-left: 3px solid #bf9000;
+            padding: 20px;
+            display: none; /* Initially hidden */
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6667ab;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #bf9000;
+        }
+
+        /* Close button for the login form */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Flash message styles */
+        .flash-message {
+        display: none;
+        position: fixed;
+        top: 30%;
+        right: 60;
+        transform: translateY(-50%);
+        background-color: #28a745;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5479084/">Health</a>
+        <a href="#">About Us</a>
+        <a href="#" id="login-link">Login</a>
+    </nav>
+    
+    <h1 id="main-title">Awareness On Healthy Eating And Nutrition</h1> <!-- Heading for the article -->
+    <hr size="2px" color="black">
+    
+    <!-- Food Image -->
+    <img align="center" width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYVPgn0IZjhJ7NhBdsT9ol1aFUrunzsJ0-Rwq57aDgfVA4-8BdPnu1smRA&s=10" alt="Healthy Food">
+
+    <!-- Paragraph 1 -->
+    <p>
+        Healthy eating and nutrition are pivotal in maintaining overall well-being and preventing chronic diseases...
+    </p>
+
+    <!-- Subheading -->
+    <h2><u>Causes of Poor Nutrition in India:</u></h2>
+
+    <!-- Paragraph 2 -->
+    <p>
+        Several factors contribute to the declining nutritional quality of diets in India:<br>
+        <b>1. Urbanization:</b> Rapid urbanization has led to changes in food habits...<br>
+        <b>2. Economic Factors:</b> Economic constraints limit access to fresh fruits and vegetables...<br>
+        <b>3. Cultural Influences:</b> Modern lifestyles often encourage eating out...<br>
+        <b>4. Lack of Awareness:</b> Many individuals are unaware of the importance of balanced nutrition...
+    </p>
+
+    <h2><u>Effects of Poor Nutrition:</u></h2>
+    <p>
+        The consequences of poor nutrition are profound and can lead to various health issues...
+    </p>
+
+    <!-- Links -->
+    <a href="https://www.mayoclinic.org/diseases-conditions/obesity/symptoms-causes/syc-20375742">know more about Obesity.</a><br>
+    <a href="https://my.clevelandclinic.org/health/diseases/7104-diabetes">know more about Diabetes.</a><br>
+    <a href="https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)">know more about Cardiovascular Disease.</a><br>
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9710417/">what is nutritional deficiencies?</a>
+
+    <!-- this is  Table1 -->
+    <h3><u><em>Comparison of Traditional and Modern Diets:</em></u></h3>
+    <table>
+        <tr>
+            <th>Aspect</th>
+            <th>Traditional Indian diet</th>
+            <th>Modern diet</th>
+        </tr>
+        <tr>
+            <td>Food Variety</td>
+            <td>Rich in whole grains, legumes, fruits, and vegetables</td>
+            <td>Often high in processed foods and sugars</td>
+        </tr>
+        <tr>
+            <td>Nutritional value</td>
+            <td>Balanced, with essential nutrients and fibers</td>
+            <td>Often lacks essential nutrients</td>
+        </tr>
+        <tr>
+            <td>Cooking method</td>
+            <td>Steaming, boiling, and spices for health benefits</td>
+            <td>Deep-frying and high-temperature cooking</td>
+        </tr>
+        <tr>
+            <td>Meal frequency</td>
+            <td>Smaller, more frequent meals</td>
+            <td>Larger, less frequent meals</td>
+        </tr>
+        <tr>
+            <td>Cultural significance</td>
+            <td>Strong ties to festivals and traditions</td>
+            <td>Convenience over culture</td>
+        </tr>
+    </table>
+
+    <!-- this is  Table2 -->
+    <font color="green"><h3><u><em>Nutritive Foods:</em></u></h3></font>
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Nutrients</th>
+            <th>Health Benefit</th>
+        </tr>
+        <tr>
+            <td>Lentils (Dal)</td>
+            <td>Proteins, fiber, iron, B vitamins</td>
+            <td>Support muscle growth and digestion</td>
+        </tr>
+        <tr>
+            <td>Quinoa</td>
+            <td>Complete protein, fiber, antioxidant</td>
+            <td>Helps in weight management and energy</td>
+        </tr>
+        <tr>
+            <td>Spinach</td>
+            <td>Vitamins A, C, K, iron, calcium</td>
+            <td>Boosts immunity and bone health</td>
+        </tr>
+        <tr>
+            <td>Turmeric</td>
+            <td>Curcumin (anti-inflammatory), antioxidants</td>
+            <td>Promotes overall health and reduces inflammation</td>
+        </tr>
+        <tr>
+            <td>Yogurt</td>
+            <td>Probiotics, calcium, protein</td>
+            <td>Aids digestion and strengthens bones</td>
+        </tr>
+        <tr>
+            <td>Millets</td>
+            <td>Fiber, magnesium, B vitamins</td>
+            <td>Helps control blood sugar and cholesterol</td>
+        </tr>
+    </table>
+
+    <!-- Conclusion -->
+    <p>
+        <b>
+            <font color="green"><u>Conclusion:</u></font>
+        </b><br>
+        Promoting healthy eating and nutrition in India is crucial for combating the rise of lifestyle-related diseases...
+    </p>
+
+    <!-- this is Login Form which i have attached to login button -->
+    <div class="login-container" id="login-form">
+        <span class="close-btn" onclick="toggleLoginForm()">&times;</span>
+        <h2>Login</h2>
+        <form onsubmit="showFlashMessage(event)">
+            <input type="text" placeholder="Username" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Flash message -->
+    <div class="flash-message" id="flash-message">
+        Login successfully
+    </div>
+
+    <script>
+        // Toggle login form visibility
+        document.getElementById('login-link').onclick = function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            toggleLoginForm();
+        };
+
+        function toggleLoginForm() {
+            const loginForm = document.getElementById('login-form');
+            if (loginForm.style.display === "none" || loginForm.style.display === "") {
+                loginForm.style.display = "block";
+            } else {
+                loginForm.style.display = "none";
+            }
+        }
+
+        // Show flash message on successful login
+        function showFlashMessage(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Show the flash message
+            const flashMessage = document.getElementById('flash-message');
+            flashMessage.style.display = "block";
+
+            // Hide the flash message after 3 seconds
+            setTimeout(function() {
+                flashMessage.style.display = "none";
+                toggleLoginForm(); // Hide login form after success
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
