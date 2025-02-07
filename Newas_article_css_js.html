@@ -1,0 +1,372 @@
+<html>
+<head>
+       <title>news article</title>
+       <style type="text/css">
+       /*genral style*/
+       body {
+       font-family: Arial, sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: #f4f4f9;
+       }
+       
+       h1, h3, h4, h5 {
+       color: #2d2d2d;
+       }
+       
+       p {
+       color: #333;
+       font-size: 16px;
+       line-height: 1.6;
+       margin-bottom: 15px;
+       }
+       
+       a {
+       text-decoration: none;
+       color: #0066cc;
+       }
+       
+       a:hover {
+       color: #ff6600;
+       }
+       
+       /* Header styling with scroll effect from top to bottom */
+       header {
+       background: linear-gradient(to top, #ADD8E6, #ffffff); /* Light blue to white gradient */
+       padding: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       text-align: center;
+       animation: slideDown 2s ease-in-out;
+       }
+       
+       
+       @keyframes slideDown {
+       from {
+       transform: translateY(-100%);
+       }
+       to {
+       transform: translateY(0);
+       }
+       }
+       
+       header img {
+       max-height: 100px;
+       max-width: 100px;
+       }
+       
+       header h1 {
+       font-family: 'Times New Roman', serif;
+       font-size: 36px;
+       color: #2d2d2d;
+       margin-top: 10px;
+       }
+       
+       header h3 a {
+       font-size: 16px;
+       color: #0066cc;
+       }
+       
+       hr {
+       border: 0;
+       height: 2px;
+       background-color: #333;
+       margin-top: 20px;
+       }
+       
+       /* This one for  main article styles */
+       .article-content {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       margin: 20px;
+       }
+       
+       .article-text {
+       width: 60%;
+       padding-right: 20px;
+       }
+       
+       .article-image {
+       width: 35%;
+       margin-bottom: 20px;
+       }
+       
+       .article-image img {
+       width: 100%;
+       border-radius: 8px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       }
+       
+       /* Table styling with aligned image to the right */
+       table {
+       width: 100%;
+       margin-top: 30px;
+       border-collapse: collapse;
+       }
+       
+       table td, table th {
+       padding: 12px;
+       text-align: left;
+       border-bottom: 1px solid #ddd;
+       }
+       
+       table tr:nth-child(even) {
+       background-color: #f9f9f9;
+       }
+       
+       table a {
+       color: #0066cc;
+       }
+       
+       table a:hover {
+       color: #ff6600;
+       }
+       
+       table td img {
+       float: right;
+       margin-left: 15px;
+       }
+       
+       /* Footer styling with scroll effect from bottom to top */
+      footer {
+      background: linear-gradient(to top, #ADD8E6, #ffffff); /* Light olive green gradient from bottom to top */
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      animation: slideUp 2s ease-in-out;
+      }
+      
+       
+       @keyframes slideUp {
+       from {
+       transform: translateY(100%);
+       }
+       to {
+       transform: translateY(0);
+       }
+       }
+       
+       /* this Styles for the Login Form */
+       .login-container {
+       position: fixed;
+       top: 0;
+       right: 0;
+       width: 300px;
+       height: 100%;
+       background-color: #fff;
+       border-left: 3px solid #bf9000;
+       padding: 20px;
+       display: none; /* Initially hidden */
+       box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+       }
+       
+       .login-container input {
+       width: 100%;
+       padding: 10px;
+       margin: 10px 0;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       }
+       
+       .login-container button {
+       width: 100%;
+       padding: 10px;
+       background-color: #6667ab;
+       color: white;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       }
+       
+       .login-container button:hover {
+       background-color: #bf9000;
+       }
+       
+       /* Close button for the login form */
+       .close-btn {
+       position: absolute;
+       top: 10px;
+       left: 10px;
+       font-size: 20px;
+       cursor: pointer;
+       }
+       
+       /* Flash message styles */
+       .flash-message {
+       display: none;
+       position: fixed;
+       top: 30%;
+       right: 60;
+       transform: translateY(-50%);
+       background-color: #28a745;
+       color: white;
+       padding: 10px;
+       border-radius: 5px;
+       font-size: 16px;
+       }
+       
+       </style>
+</head>
+<body>
+<!--header of the page-->
+<header>
+<!-- article logo image -->
+<img align="left" width="100px" height="100px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjP4W6sPYJQqAaSRmwpGiIxZHdLflGUq9Dlw&usqp=CAU">
+<!--search tool image-->
+<img align="right" width="50px" height="50px" src="https://cdn-icons-png.flaticon.com/512/814/814235.png">
+<h1 align="center"><font face="times new roman">THE INDIAN PRIME NEWS</font></h1>
+<hr size="2px" color="black">
+<h3 align="right">
+<a href="#" id="login-link">Login</a> &nbsp;&nbsp;
+</h3>
+
+<!--headline of the page-->
+<h1>New Lancet study: How banning sale of tobacco products can prevent 40% of lung cancer deaths</h1>
+<font color="grey"><h3>Preventing 1.2 million lung cancer deaths: New Lancet study highlights impact of a smoke-free generation</h3></font>
+ <hr>
+ </header>
+ 
+ <font color="#202121">
+ <p>Written by Anuradha Mascarenhas</p>
+ <p>Pune | Updated: October 3, 2024 22:38 IST</p>
+ </font>
+ <!--article main subject image-->
+ <img width="600px" align="right" src="https://images.indianexpress.com/2024/10/cancer.jpg?w=640">
+ 
+ <p>
+ When 40-year-old Nilesh (name changed) from Delhi started hacking up thick, phlegmy coughs, he knew it was time to see a doctor. The fear of lung cancer loomed, but tests cleared him of that—though the warning was clear: his ten-a-day cigarette habit was a ticking time bomb. Urged to quit, Nilesh joined a three-month counselling program.
+ </p>
+ <p>“Nilesh was committed to our sessions, and I had his wife and mother by his side to help prevent any relapses. Social events, like parties, can be tempting, but with his family as his anchor, he managed to quit,” says Dr Arvind Kumar, Chairman of the Institute of Chest Surgery and Lung Transplantation at Medanta Hospital.</p>
+ <p>
+ Nilesh’s case underscores the urgency of tackling smoking-related health issues, a concern echoed in a recent study published in The Lancet Public Health. The new modelling study, led by researchers from the University of Santiago de Compostela, the International Agency for Research on Cancer, and global collaborators, shows that creating a generation of non-smokers could prevent 1.2 million lung cancer deaths worldwide. 
+ </p>
+ <p>
+ Lung cancer prevalence<br>
+ Lung cancer is the second most diagnosed cancer and the leading cause of cancer deaths globally, claiming around 1.8 million lives annually. Tobacco smoking is the primary culprit, responsible for over 67% of lung cancer deaths in 2019.
+ </p>
+ <p>
+    In India, a report from the Indian Journal of Medical Research (2022) reveals that one in nine people are likely to face a cancer diagnosis in their lifetime, with lung cancer ranking highest among men, according to the National Cancer Registry Programme.
+ </p>
+ 
+ <p>
+ The study findings<br>
+ The study raises a red flag, suggesting that banning the sale of cigarettes and other tobacco products to people born between 2006 and 2010 could prevent 40% of all lung cancer deaths in 185 countries by 2095.
+ </p>
+ 
+<p>
+  This birth cohort includes 650 million people, and estimates indicate that 1.2 million lung cancer deaths—40% of those expected among this generation—could be avoided if smoking were eliminated. “Lung cancer is a major killer worldwide, with a staggering two-thirds of deaths linked to one preventable risk factor: tobacco smoking,” said Dr Julia Rey Brandariz, lead author from the University of Santiago de Compostela, Spain.
+</p>
+<p>
+   Dr Isabelle Soerjomataram, Deputy Head of the Cancer Surveillance Branch at IARC and senior author of the study said: “While high-income countries had a higher proportion of potentially avoidable lung cancer deaths (61.1%), the largest number of avoidable deaths occurred in low- and middle-income countries, accounting for 65% of all preventable lung cancer deaths globally.”
+</p>
+<p>
+<h5>Why are the findings significant for India?</h5>
+“We estimate that in India, 235,100 lung cancer deaths (5.1 per 100,000 population) will occur in the study birth cohort (born between 2006 and 2010). Of these, 153,600 deaths (6.5 per 100,000 population) will occur in males, and 81,500 deaths (3.6 per 100,000 population) in females. According to the study’s findings, approximately 4,200 deaths (1.8%) could be averted in India. Among men, 3,100 deaths (2.0%) would be prevented, while among women, 1,100 deaths (1.3%) could be avoided,” Dr Julia said in an email response to <a href="https://indianexpress.com/">The Indian Express.</a>
+</p>
+ 
+ <p>
+ Dr Julia noted that India is one of the countries where the percentage of lung cancer deaths that could be averted by implementing a tobacco-free generation is lower than in neighbouring countries like Iran or Kazakhstan.
+ </p>
+ 
+ <p>
+ "This can be explained by the fact that India has a comparatively lower lung cancer mortality rate than other countries (according to GLOBOCAN 2022 data, the rate is 5.3 deaths per 100,000 population), and these are the figures we use in our estimates, which may affect our results,” Dr Julia explained. She also referenced the latest WHO report on the tobacco epidemic, published in 2023, which states that tobacco use prevalence in India is 6%.
+ </p>
+ <!--This is link of another news-->
+<h3>Read also|<a href="https://indianexpress.com/article/entertainment/bollywood/amitabh-bachchcan-smoked-200-cigarettes-a-day-drink-alcohol-eat-meat-9599552/">Amitabh Bachchan smoked 200 cigarettes a day, would drink anything he could get his hands on: When Big B revealed why he gave it all up</a></h3>
+ <p>
+ Dr Julia also highlighted that the<a href="https://www.who.int/"> WHO </a>report on the tobacco epidemic shows India has achieved a high level of compliance with measures such as tobacco dependence treatment and health warning labels. “However, India could further strengthen its efforts by enhancing measures like more rigorous monitoring of smoking prevalence, increasing taxes on tobacco products, and expanding the number of smoke-free spaces. These actions have proven effective in reducing tobacco use,” she said.
+ </p>
+<h4 align="left">
+     Today's Top News
+</h4>
+ <!--some more news link added in the table-->
+ <table border="0px" cellspacing="0px" frame="hsides" rules="rows">
+ <tr>
+ <td>
+ <a href="https://indianexpress.com/article/technology/tech-news-technology/more-apple-stores-coming-to-india-iphone-16-pro-to-be-made-locally-9602879/?ref=newlist_hp"">  More Apple stores coming to India, iPhone 16 Pro to be made locally</a>
+ </td>
+ 
+ <td colspan="2">
+ <a href="https://indianexpress.com/article/technology/tech-news-technology/more-apple-stores-coming-to-india-iphone-16-pro-to-be-made-locally-9602879/">
+ <img width="60px"src="https://images.indianexpress.com/2024/10/Apple-Store-Mumbai.jpg?w=640">
+ </a>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <a href="https://indianexpress.com/article/india/how-a-fake-sbi-branch-that-came-up-overnight-duped-people-of-lakhs-in-a-chhattisgarh-village-9602573/?ref=newlist_hp">How a fake SBI branch that came up overnight duped people of lakhs in a Chhattisgarh village</a>
+ <td>
+ <td>
+ <img width="60px" src="https://images.indianexpress.com/2024/10/sbi-1200-1.jpeg?w=640">
+ </td>
+ </tr>
+ 
+ <tr>
+ <td><a href="https://indianexpress.com/article/health-wellness/how-to-flush-bad-cholesterol-out-of-your-body-three-facts-you-must-know-9603169/?ref=newlist_hp"> How to flush bad cholesterol out of your body: three facts you must know</a></td>
+ <td colspan="2"><a href="https://indianexpress.com/article/health-wellness/how-to-flush-bad-cholesterol-out-of-your-body-three-facts-you-must-know-9603169/?ref=newlist_hp"><img width="60px" src="https://images.indianexpress.com/2024/10/cholestrol.jpg?w=640"></a></td>
+ </tr>
+ 
+ 
+ <tr>
+ <td><a href="https://indianexpress.com/article/opinion/columns/pratap-bhanu-mehta-writes-why-the-arguments-for-and-against-one-nation-one-election-are-flawed-9602525/?ref=newlist_hp">Why the arguments for and against One Nation One Election are flawed</a></td>
+ <td colspan="2"><a href="https://indianexpress.com/article/opinion/columns/pratap-bhanu-mehta-writes-why-the-arguments-for-and-against-one-nation-one-election-are-flawed-9602525/?ref=newlist_hp"><img width="60px" src="https://images.indianexpress.com/2024/10/Both-for-and-against-copy.jpg?w=640"><a></td>
+ </tr>
+ </table>
+ 
+
+ <hr size="3px" color="black">
+ <footer><!--footer of the page-->
+ <p align="center"> &copy; All right reserved to The indian prime news</p>
+ </footer>
+ 
+ <!-- this is Login Form which i have attached to login button -->
+ <div class="login-container" id="login-form">
+ <span class="close-btn" onclick="toggleLoginForm()">&times;</span>
+ <h2>Login</h2>
+ <form onsubmit="showFlashMessage(event)">
+ <input type="text" placeholder="Username" required><br>
+ <input type="password" placeholder="Password" required><br>
+ <button type="submit">Login</button>
+ </form>
+ </div>
+ 
+ <!-- Flash message -->
+ <div class="flash-message" id="flash-message">
+ Login successfully
+ </div>
+
+<script>
+        // Toggle login form visibility
+        document.getElementById('login-link').onclick = function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            toggleLoginForm();
+        };
+
+        function toggleLoginForm() {
+            const loginForm = document.getElementById('login-form');
+            if (loginForm.style.display === "none" || loginForm.style.display === "") {
+                loginForm.style.display = "block";
+            } else {
+                loginForm.style.display = "none";
+            }
+        }
+
+        // Show flash message on successful login
+        function showFlashMessage(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Show the flash message
+            const flashMessage = document.getElementById('flash-message');
+            flashMessage.style.display = "block";
+
+            // Hide the flash message after 3 seconds
+            setTimeout(function() {
+                flashMessage.style.display = "none";
+                toggleLoginForm(); // Hide login form after success
+            }, 3000);
+        }
+    </script>
+
+</body>
+</html>
